@@ -2,4 +2,9 @@ git init to initiate a local repo
 git status for check wheather any modified files present
 git commit -m "message here" commit and message
 gti log to know the logs
-git checkout <git id> to see the committed version
+git checkout <git id> to see the committed version, u can go back using checkout , also check out the HEAD
+ do not commit all files only commit what is modified 
+
+git beanch <name of branch>  #crates a new branch
+ git branch # will list all the branches present and shows the current branch working on
+ git checkout <branch name> # will change the current branch working on
