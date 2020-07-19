@@ -1,10 +1,35 @@
 git init to initiate a local repo
 git status for check wheather any modified files present
-git commit -m "message here" commit and message
-gti log to know the logs
-git checkout <git id> to see the committed version, u can go back using checkout , also check out the HEAD
+git commit -m "message here" #commit and message
+gii log #to know the logs
+git checkout <git id> #to see the committed version, u can go back using checkout , also check out the HEAD
  do not commit all files only commit what is modified 
 
 git beanch <name of branch>  #crates a new branch
  git branch # will list all the branches present and shows the current branch working on
  git checkout <branch name> # will change the current branch working on
+ 
+ Fast Forward Merge
+ gti merge <name of branch(feature)> # this will merge the current branch(master) with the "name of branch(feature)" branch now both head,master,feature is on the last commit
+ in this merge master branch was idle feature branch was developed
+ git stash #to revert to the last commit
+
+
+Recursive Branh
+ when two branches developed with on different files(!important)
+for this merge a new commit is opened on the current branch(master) and the files were merged
+the feature branch will be left at the old position
+if the same file is modified in differnet branch confilt will occur
+
+ git log --all --decorate --graph # to see the graph
+ 
+
+
+ Conflict Case
+ git will show an error and suggest to fix it and then commit 
+ then when u open the file u can see the both code then manually select the code which you want or both then commit
+  
+
+  git remote add <name of the remote (origin)> <remote repo url> #to add the remote repo
+  git remote -v # to see the all remote repos
+  git push <name of the remote (origin)> <branch name (master)> #push the code into remote repo
