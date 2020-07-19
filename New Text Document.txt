@@ -1,3 +1,5 @@
 git init to initiate a local repo
 git status for check wheather any modified files present
 git commit -m "message here" commit and message
+gti log to know the logs
+git checkout <git id> to see the committed version
