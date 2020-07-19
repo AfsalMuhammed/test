@@ -1,0 +1,2 @@
+git init to initiate a local repo
+git status for check wheather any modified files present
